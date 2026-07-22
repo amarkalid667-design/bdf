@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة دخول ولوحة تحكم HTML فقط</title>
+</head>
+<body>
+
+    <!-- 1. صفحة تسجيل الدخول -->
+    <section id="login-section">
+        <h2>تسجيل الدخول</h2>
+        <form action="#dashboard-section" method="get">
+            <div>
+                <label for="username">اسم المستخدم:</label><br>
+                <input type="text" id="username" name="username" required placeholder="أدخل اسم المستخدم">
+            </div>
+            <br>
+            <div>
+                <label for="password">كلمة المرور:</label><br>
+                <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+            </div>
+            <br>
+            <button type="submit">دخول</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 2. لوحة التحكم -->
+    <section id="dashboard-section">
+        <h2>لوحة التحكم</h2>
+        <p>مرحباً بك في النظام</p>
+
+        <!-- أزرار إخفاء/إظهار المحتوى المعتمدة على عنصر details الخاص بـ HTML -->
+        <article>
+            <details open>
+                <summary><b>إحصائيات المبيعات </b></summary>
+                <p>إجمالي المبيعات هذا الشهر: 25,000 دولار</p>
+                <p>عدد الطلبات: 140 طلب</p>
+            </details>
+        </article>
+
+        <br>
+
+        <article>
+            <details open>
+                <summary><b>قائمة المستخدمين </b></summary>
+                <table border="1" cellpadding="8">
+                    <thead>
+                        <tr>
+                            <th>الاسم</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>أحمد محمد</td>
+                            <td>ahmed@example.com</td>
+                            <td>نشط</td>
+                        </tr>
+                        <tr>
+                            <td>سارة خالد</td>
+                            <td>sara@example.com</td>
+                            <td>غير نشط</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </article>
+
+        <br>
+
+        <article>
+            <details>
+                <summary><b>إعدادات النظام ( )</b></summary>
+                <form>
+                    <label>
+                        <input type="checkbox" checked> تفعيل التنبيهات
+                    </label>
+                    <br><br>
+                    <label for="site-name">اسم الموقع:</label>
+                    <input type="text" id="site-name" value="لوحتي البسيطة">
+                </form>
+            </details>
+        </article>
+
+        <br>
+        <a href="#login-section"><button 
+
+
+</html>
